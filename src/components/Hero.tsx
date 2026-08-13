@@ -6,10 +6,10 @@ import { profile } from "@/lib/content";
 const links = [
   { label: "GitHub", href: profile.social.github, Icon: SiGithub },
   { label: "LinkedIn", href: profile.social.linkedin, Icon: FaLinkedin },
-  { label: "Resume", href: profile.resumeUrl, Icon: FiFileText },
   { label: "Instagram", href: profile.social.instagram, Icon: SiInstagram },
   { label: "Substack", href: profile.social.substack, Icon: SiSubstack },
   { label: "Goodreads", href: profile.social.goodreads, Icon: SiGoodreads },
+  { label: "Resume", href: profile.resumeUrl, Icon: FiFileText },
 ];
 
 export default function Hero() {
