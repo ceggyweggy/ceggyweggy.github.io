@@ -1,9 +1,9 @@
 export const profile = {
   name: "Cadence Loh",
-  role: "Software Engineer",
+  role: "CS & Applied Mathematics @ UC Berkeley",
   location: "Berkeley, CA",
   summary:
-    "CS student at UC Berkeley working across agentic AI, ML, and web development. Recent work spans multi-agent developer tooling, robotics perception, and applied cryptography research.",
+    "\"Practice charity without holding in mind any conceptions about charity, for charity after all is just a word.\"",
   email: "cadence_loh@berkeley.edu",
   resumeUrl: "/resume.pdf",
   social: {
@@ -38,8 +38,9 @@ export const experience = [
     org: "Sweden Startup Next, Stockholm",
     period: "Jun. 2026 — Aug. 2026",
     points: [
-      "Used Claude Code to accelerate redevelopment of a Node.js/Supabase reporting platform, building reusable skills to automate repetitive implementation and debugging workflows.",
-      "Designed a tool-augmented multi-agent code review workflow using specialized agents for frontend, backend, database, and security analysis, enabling parallel review across the stack.",
+      "Used Claude Code to accelerate redevelopment of a Node.js/Supabase reporting platform, building reusable skills to automate repetitive implementation and debugging workflows",
+      "Designed a tool-augmented multi-agent code review workflow using specialized agents for frontend, backend, database, and security analysis, enabling parallel review across the stack",
+      "Developed reusable Claude Code skills to automate repetitive development workflows, reducing manual intervention in routine coding and debugging tasks",
     ],
   },
   {
@@ -47,9 +48,9 @@ export const experience = [
     org: "DSO National Laboratories, Singapore",
     period: "Apr. 2025 — Jul. 2025",
     points: [
-      "Compared two state-of-the-art pose estimation models, FoundationPose and MASt3R, for a self-balancing robot.",
-      "Integrated Segment Anything Model and GroundingDINO for automatic, language-prompted object mask generation.",
-      "Reduced model sizes by over 10% to run on CPU.",
+      "Compared two state-of-the-art pose estimation models, FoundationPose and MASt3R, for a self-balancing robot",
+      "Integrated Segment Anything Model and GroundingDINO for automatic, language-prompted object mask generation",
+      "Reduced model sizes by over 10% to run on CPU",
     ],
   },
   {
@@ -59,6 +60,47 @@ export const experience = [
     points: [
       "Developed a dynamic programming algorithm to conduct frequency analysis on partially known data derived from SQL search queries.",
       "Implemented four state-of-the-art volume-hiding searchable encryption schemes and improved storage and query volume by an average of 30% across all schemes; awarded Bronze at the Singapore Science and Engineering Fair.",
+    ],
+  },
+];
+
+export const teaching = [
+  {
+    role: "CS70 Tutor",
+    org: "University of California, Berkeley",
+    period: "Aug. 2026 - Present",
+    points: [
+      "Part of Course Staff for CS70: Discrete Mathematics and Probability Theory",
+      // "Integrated Segment Anything Model and GroundingDINO for automatic, language-prompted object mask generation.",
+      // "Reduced model sizes by over 10% to run on CPU.",
+    ],
+  },
+  {
+    role: "CSM Mentor",
+    org: "Computer Science Mentors, UC Berkeley",
+    period: "Jan. 2026 - Present",
+    points: [
+      "Held weekly small-group women affinity section for CS61A, teaching and guiding students towards learning new content for CS61A, the introductory CS class at UC Berkeley",
+      "Created and organised worksheet problems for review sessions",
+    ],
+  },
+  {
+    role: "PiE Mentor",
+    org: "Pioneers in Engineering, UC Berkeley",
+    period: "Jan. 2026 - May 2026",
+    points: [
+      "Mentored a team from Arroyo High School as part of Pioneers in Engineering, which provides Robotics competition experience to high schools in the Bay Area",
+      "Guided students in building principles and fundamental Python",
+    ],
+  },
+  {
+    role: "Robotics Instructor",
+    org: "Raffles Girls' School (Secondary)",
+    period: "Jan. 2025 - Apr. 2025",
+    points: [
+      "Mentored a four-person team in RoboCupJunior Soccer Lightweight to build two robots to play soccer autonomously using Raspberry Pi Pico microcontrollers, programming using Arduino IDE, in C",
+      "Guided students in basic hardware skills, including soldering, 3D modeling and PCB design",
+      "Team achieved 1st place locally in Singapore Open, qualifying to represent Singapore at world championship",
     ],
   },
 ];

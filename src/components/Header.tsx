@@ -6,9 +6,9 @@ import { profile } from "@/lib/content";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/resume", label: "Resume" },
-  { href: "/media", label: "Media" },
+  // { href: "/projects", label: "Projects" },
+  { href: "/experience", label: "Experience" },
+  // { href: "/media", label: "Media" },
   { href: "/dino-cam", label: "Dino Cam" },
   { href: "/contact", label: "Contact" },
 ];

@@ -1,13 +1,13 @@
-import { education, experience, skills } from "@/lib/content";
+import { education, experience, skills , teaching } from "@/lib/content";
 
-export default function Resume() {
+export default function Experience() {
   return (
     <section className="py-16 sm:py-20">
-      <h2 className="text-2xl font-semibold tracking-tight">Resume</h2>
+      <h2 className="text-2xl font-semibold tracking-tight">Experience</h2>
 
       <div className="mt-8">
         <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-          Experience
+          Industry/Research
         </h3>
         <div className="mt-4 space-y-6">
           {experience.map((job) => (
@@ -30,7 +30,32 @@ export default function Resume() {
         </div>
       </div>
 
-      <div className="mt-10">
+      <div className="mt-8">
+        <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+          Teaching
+        </h3>
+        <div className="mt-4 space-y-6">
+          {teaching.map((job) => (
+            <div key={`${job.org}-${job.period}`}>
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+                <p className="font-medium">
+                  {job.role} · {job.org}
+                </p>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                  {job.period}
+                </p>
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                {job.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* <div className="mt-10">
         <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
           Education
         </h3>
@@ -49,7 +74,7 @@ export default function Resume() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <div className="mt-10 space-y-4">
         <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
