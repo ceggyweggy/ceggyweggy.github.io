@@ -1,4 +1,16 @@
+import { FaLinkedin } from "react-icons/fa6";
+import { FiFileText } from "react-icons/fi";
+import { SiGithub, SiGoodreads, SiInstagram, SiSubstack } from "react-icons/si";
 import { profile } from "@/lib/content";
+
+const links = [
+  { label: "GitHub", href: profile.social.github, Icon: SiGithub },
+  { label: "LinkedIn", href: profile.social.linkedin, Icon: FaLinkedin },
+  { label: "Resume", href: profile.resumeUrl, Icon: FiFileText },
+  { label: "Instagram", href: profile.social.instagram, Icon: SiInstagram },
+  { label: "Substack", href: profile.social.substack, Icon: SiSubstack },
+  { label: "Goodreads", href: profile.social.goodreads, Icon: SiGoodreads },
+];
 
 export default function Hero() {
   return (
@@ -15,31 +27,31 @@ export default function Hero() {
       <p className="mt-6 max-w-xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
         {profile.summary}
       </p>
-      <div className="mt-6 flex gap-4 text-sm font-medium">
-        <a
-          href={profile.social.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-black underline-offset-4 hover:underline dark:text-white"
-        >
-          GitHub
-        </a>
-        <a
-          href={profile.social.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-black underline-offset-4 hover:underline dark:text-white"
-        >
-          LinkedIn
-        </a>
-        <a
-          href={profile.resumeUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-black underline-offset-4 hover:underline dark:text-white"
-        >
-          Resume (PDF)
-        </a>
+      <div className="mt-6 flex gap-5">
+        {links.map(({ label, href, Icon }) =>
+          href ? (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              title={label}
+              className="text-zinc-700 transition-colors hover:text-black dark:text-zinc-300 dark:hover:text-white"
+            >
+              <Icon className="h-5 w-5" />
+            </a>
+          ) : (
+            <span
+              key={label}
+              aria-label={`${label} (coming soon)`}
+              title={`${label} (coming soon)`}
+              className="text-zinc-300 dark:text-zinc-700"
+            >
+              <Icon className="h-5 w-5" />
+            </span>
+          ),
+        )}
       </div>
     </section>
   );

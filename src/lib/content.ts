@@ -4,11 +4,14 @@ export const profile = {
   location: "Berkeley, CA",
   summary:
     "CS student at UC Berkeley working across agentic AI, ML, and web development. Recent work spans multi-agent developer tooling, robotics perception, and applied cryptography research.",
-  email: "lohcadence@gmail.com",
+  email: "cadence_loh@berkeley.edu",
   resumeUrl: "/resume.pdf",
   social: {
     github: "https://github.com/ceggyweggy/",
     linkedin: "https://www.linkedin.com/in/cadence-loh-9a268423a/",
+    instagram: "https://www.instagram.com/shades_of_yell.owo13",
+    substack: "https://slippyslide.substack.com/",
+    goodreads: "https://www.goodreads.com/user/show/125283554-cadence",
   },
 };
 
@@ -21,9 +24,9 @@ export const projects = [
     href: "",
   },
   {
-    name: "Robotics Software Lead",
+    name: "Robocup Junior Soccer",
     description:
-      "Led software development for a robot soccer team, designing ball-tracking, boundary-detection, and strategic-positioning algorithms that improved performance without relying on sophisticated hardware — the only competitive soccer team in the world to do so.",
+      "Led software development for RCJ Soccer from 2021-2024, designing ball-tracking, boundary-detection, and strategic-positioning algorithms that improved performance without relying on sophisticated hardware — the only competitive soccer team in the world to do so.",
     stack: ["C", "Python"],
     href: "",
   },
@@ -71,6 +74,11 @@ export const education = [
     degree: "H2 Physics, Chemistry, Mathematics, Economics; H3 Game Theory",
     period: "Feb. 2023 — Dec. 2024",
   },
+];
+
+export const media: { src: string; alt: string; caption?: string }[] = [
+  // Add photos here once available, e.g.:
+  // { src: "/media/photo1.jpg", alt: "Description", caption: "Optional caption" },
 ];
 
 export const skills = [

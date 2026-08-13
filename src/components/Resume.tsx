@@ -2,7 +2,7 @@ import { education, experience, skills } from "@/lib/content";
 
 export default function Resume() {
   return (
-    <section id="resume" className="py-16 sm:py-20">
+    <section className="py-16 sm:py-20">
       <h2 className="text-2xl font-semibold tracking-tight">Resume</h2>
 
       <div className="mt-8">

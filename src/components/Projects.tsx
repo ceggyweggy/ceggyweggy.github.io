@@ -2,7 +2,7 @@ import { projects } from "@/lib/content";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 sm:py-20">
+    <section className="py-16 sm:py-20">
       <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
       <div className="mt-8 grid gap-6 sm:grid-cols-2">
         {projects.map((project) => {
