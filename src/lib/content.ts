@@ -126,9 +126,9 @@ export const media: { src: string; alt: string; caption?: string }[] = [
 // Newest first.
 export const dinoCam: { src: string; date: string; caption: string }[] = [
   { src: "/dino-cam/2026-08-04.jpg", date: "2026-08-04", caption: "Dino enjoying breakfast at Cafe Strada, Berkeley" },
-  { src: "/dino-cam/2026-07-19-c.jpg", date: "2026-07-19", caption: "Dino learns how to play chess" },
   { src: "/dino-cam/2026-07-19-b.jpg", date: "2026-07-19", caption: "Dino enjoying drinks before World Cup Final" },
   { src: "/dino-cam/2026-07-19-a.jpg", date: "2026-07-19", caption: "Dino enjoying buffet breakfast" },
+  { src: "/dino-cam/2026-07-19-c.jpg", date: "2026-07-18", caption: "Dino learns how to play chess" },
   // { src: "/dino-cam/2026-07-17-b.jpg", date: "2026-07-17", caption: "Caption coming soon" },
   { src: "/dino-cam/2026-07-17-a.jpg", date: "2026-07-17", caption: "Dinos in small cruise ship cabin" },
   { src: "/dino-cam/2026-06-13.jpg", date: "2026-06-13", caption: "Many not-dinos (dragons) at The Viking Museum, Stockholm" },
