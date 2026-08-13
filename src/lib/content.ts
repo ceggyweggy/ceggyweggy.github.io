@@ -81,6 +81,26 @@ export const media: { src: string; alt: string; caption?: string }[] = [
   // { src: "/media/photo1.jpg", alt: "Description", caption: "Optional caption" },
 ];
 
+// Newest first.
+export const dinoCam: { src: string; date: string; caption: string }[] = [
+  { src: "/dino-cam/2026-08-04.jpg", date: "2026-08-04", caption: "Dino enjoying breakfast at Cafe Strada, Berkeley" },
+  { src: "/dino-cam/2026-07-19-c.jpg", date: "2026-07-19", caption: "Dino learns how to play chess" },
+  { src: "/dino-cam/2026-07-19-b.jpg", date: "2026-07-19", caption: "Dino enjoying drinks before World Cup Final" },
+  { src: "/dino-cam/2026-07-19-a.jpg", date: "2026-07-19", caption: "Dino enjoying buffet breakfast" },
+  // { src: "/dino-cam/2026-07-17-b.jpg", date: "2026-07-17", caption: "Caption coming soon" },
+  { src: "/dino-cam/2026-07-17-a.jpg", date: "2026-07-17", caption: "Dinos in small cruise ship cabin" },
+  { src: "/dino-cam/2026-06-13.jpg", date: "2026-06-13", caption: "Many not-dinos (dragons) at The Viking Museum, Stockholm" },
+  { src: "/dino-cam/2026-05-28.jpg", date: "2026-05-28", caption: "The Dino family has expanded" },
+  { src: "/dino-cam/2026-05-15.jpg", date: "2026-05-15", caption: "Dino getting bullied by other plushies" },
+  { src: "/dino-cam/2026-03-24.JPG", date: "2026-03-24", caption: "Dino seeing other dinos at Natural History Museum, London" },
+  // { src: "/dino-cam/2026-03-21.JPG", date: "2026-03-21", caption: "Caption coming soon" },
+  { src: "/dino-cam/2025-12-17.jpg", date: "2025-12-17", caption: "Dino in dorm bed" },
+  { src: "/dino-cam/2025-08-31.jpg", date: "2025-08-31", caption: "Dino with dino nuggets" },
+  { src: "/dino-cam/2025-08-16.JPG", date: "2025-08-16", caption: "Dino at Computing History Museum, Mountain View" },
+  { src: "/dino-cam/2025-08-13.JPG", date: "2025-08-13", caption: "Dino at Clark Kerr Fire Trails, Berkeley" },
+  { src: "/dino-cam/2025-07-28.JPG", date: "2025-07-28", caption: "Found Dino at a store in Singapore" },
+];
+
 export const skills = [
   { category: "Languages", items: ["Python", "C++", "Java", "JavaScript", "SQL"] },
   { category: "ML/AI", items: ["PyTorch", "Hugging Face", "Ollama"] },
