@@ -7,7 +7,7 @@ export default function Media() {
       <h2 className="text-2xl font-semibold tracking-tight">Media</h2>
 
       {media.length === 0 ? (
-        <p className="mt-4 max-w-xl text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+        <p className="mt-4 max-w-xl text-sm leading-6 text-muted">
           Photos coming soon.
         </p>
       ) : (
@@ -15,7 +15,7 @@ export default function Media() {
           {media.map((item) => (
             <figure
               key={item.src}
-              className="overflow-hidden rounded-lg border border-black/[.08] dark:border-white/[.08]"
+              className="overflow-hidden rounded-lg border border-white/10"
             >
               <Image
                 src={item.src}
@@ -25,7 +25,7 @@ export default function Media() {
                 className="h-auto w-full object-cover"
               />
               {item.caption ? (
-                <figcaption className="p-3 text-sm text-zinc-600 dark:text-zinc-400">
+                <figcaption className="p-3 text-sm text-muted">
                   {item.caption}
                 </figcaption>
               ) : null}

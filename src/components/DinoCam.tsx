@@ -15,7 +15,7 @@ export default function DinoCam() {
       <h2 className="text-2xl font-semibold tracking-tight">Dino Cam</h2>
 
       {dinoCam.length === 0 ? (
-        <p className="mt-4 max-w-xl text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+        <p className="mt-4 max-w-xl text-sm leading-6 text-muted">
           Photos coming soon.
         </p>
       ) : (
@@ -23,7 +23,7 @@ export default function DinoCam() {
           {dinoCam.map((item) => (
             <div
               key={item.src}
-              className="group relative aspect-square overflow-hidden bg-black/[.03] dark:bg-white/[.03]"
+              className="group relative aspect-square overflow-hidden bg-white/[.03]"
             >
               <Image
                 src={item.src}
@@ -32,11 +32,11 @@ export default function DinoCam() {
                 sizes="(min-width: 640px) 33vw, 50vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/70 p-3 text-center opacity-0 transition-opacity group-hover:opacity-100">
-                <p className="text-xs font-medium tracking-wide text-white/70">
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-1 bg-background/80 p-3 text-center opacity-0 transition-opacity group-hover:opacity-100">
+                <p className="text-xs font-medium tracking-wide text-accent">
                   {formatDate(item.date)}
                 </p>
-                <p className="text-sm text-white">{item.caption}</p>
+                <p className="text-sm text-foreground">{item.caption}</p>
               </div>
             </div>
           ))}

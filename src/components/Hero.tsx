@@ -18,16 +18,16 @@ export default function Hero() {
     <section className="py-16 sm:py-24">
       <div className="flex flex-col items-start gap-10 md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+          <p className="text-sm font-medium text-muted">
             {profile.location}
           </p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight sm:text-5xl">
             {profile.name}
           </h1>
-          <p className="mt-1 text-xl text-zinc-600 dark:text-zinc-400">
+          <p className="mt-1 text-xl text-muted">
             {profile.role}
           </p>
-          <p className="mt-6 max-w-xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 max-w-xl text-base leading-7 text-muted">
             {profile.summary}
           </p>
           <div className="mt-6 flex gap-5">
@@ -40,7 +40,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   aria-label={label}
                   title={label}
-                  className="text-zinc-700 transition-colors hover:text-black dark:text-zinc-300 dark:hover:text-white"
+                  className="text-foreground/70 transition-colors hover:text-accent"
                 >
                   <Icon className="h-5 w-5" />
                 </a>
@@ -49,7 +49,7 @@ export default function Hero() {
                   key={label}
                   aria-label={`${label} (coming soon)`}
                   title={`${label} (coming soon)`}
-                  className="text-zinc-300 dark:text-zinc-700"
+                  className="text-foreground/20"
                 >
                   <Icon className="h-5 w-5" />
                 </span>

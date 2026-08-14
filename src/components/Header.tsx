@@ -18,12 +18,12 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-10 border-b border-black/[.08] bg-white/80 backdrop-blur-sm dark:border-white/[.08] dark:bg-black/80">
+    <header className="sticky top-0 z-10 border-b border-white/10 bg-background/90 backdrop-blur-sm">
       <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
         <Link href="/" className="font-semibold tracking-tight">
           {profile.name}
         </Link>
-        <nav className="flex gap-6 text-sm text-zinc-600 dark:text-zinc-400">
+        <nav className="flex gap-6 text-sm text-muted">
           {links.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -32,8 +32,8 @@ export default function Header() {
                 href={link.href}
                 className={
                   isActive
-                    ? "font-medium text-black dark:text-white"
-                    : "transition-colors hover:text-black dark:hover:text-white"
+                    ? "font-medium text-accent"
+                    : "transition-colors hover:text-accent"
                 }
               >
                 {link.label}

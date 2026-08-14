@@ -6,7 +6,7 @@ export default function Experience() {
       <h2 className="text-2xl font-semibold tracking-tight">Experience</h2>
 
       <div className="mt-8">
-        <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        <h3 className="text-sm font-medium uppercase tracking-wide text-muted">
           Industry/Research
         </h3>
         <div className="mt-4 space-y-6">
@@ -16,11 +16,11 @@ export default function Experience() {
                 <p className="font-medium">
                   {job.role} · {job.org}
                 </p>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                <p className="text-sm text-muted">
                   {job.period}
                 </p>
               </div>
-              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-6 text-muted">
                 {job.points.map((point) => (
                   <li key={point}>{point}</li>
                 ))}
@@ -31,7 +31,7 @@ export default function Experience() {
       </div>
 
       <div className="mt-8">
-        <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        <h3 className="text-sm font-medium uppercase tracking-wide text-muted">
           Teaching
         </h3>
         <div className="mt-4 space-y-6">
@@ -41,11 +41,11 @@ export default function Experience() {
                 <p className="font-medium">
                   {job.role} · {job.org}
                 </p>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                <p className="text-sm text-muted">
                   {job.period}
                 </p>
               </div>
-              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-6 text-muted">
                 {job.points.map((point) => (
                   <li key={point}>{point}</li>
                 ))}
@@ -56,7 +56,7 @@ export default function Experience() {
       </div>
 
       {/* <div className="mt-10">
-        <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        <h3 className="text-sm font-medium uppercase tracking-wide text-muted">
           Education
         </h3>
         <div className="mt-4 space-y-2">
@@ -68,7 +68,7 @@ export default function Experience() {
               <p className="font-medium">
                 {item.degree} · {item.school}
               </p>
-              <p className="text-sm text-zinc-500 dark:text-zinc-400">
+              <p className="text-sm text-muted">
                 {item.period}
               </p>
             </div>
@@ -77,19 +77,19 @@ export default function Experience() {
       </div> */}
 
       <div className="mt-10 space-y-4">
-        <h3 className="text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        <h3 className="text-sm font-medium uppercase tracking-wide text-muted">
           Skills
         </h3>
         {skills.map((group) => (
           <div key={group.category} className="flex flex-wrap items-baseline gap-x-3 gap-y-2">
-            <p className="w-28 shrink-0 text-sm text-zinc-500 dark:text-zinc-400">
+            <p className="w-28 shrink-0 text-sm text-muted">
               {group.category}
             </p>
             <ul className="flex flex-wrap gap-2">
               {group.items.map((skill) => (
                 <li
                   key={skill}
-                  className="rounded-full bg-black/[.05] px-2.5 py-1 text-xs text-zinc-700 dark:bg-white/[.08] dark:text-zinc-300"
+                  className="rounded-full bg-white/[.08] px-2.5 py-1 text-xs text-foreground/80"
                 >
                   {skill}
                 </li>

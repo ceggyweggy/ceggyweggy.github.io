@@ -13,19 +13,19 @@ export default function Projects() {
               {...(project.href
                 ? { href: project.href, target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              className="group rounded-lg border border-black/[.08] p-5 transition-colors hover:border-black/[.2] dark:border-white/[.08] dark:hover:border-white/[.2]"
+              className="group rounded-lg border border-white/10 p-5 transition-colors hover:border-accent/50"
             >
-              <h3 className="font-medium group-hover:underline">
+              <h3 className="font-medium group-hover:text-accent group-hover:underline">
                 {project.name}
               </h3>
-              <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-2 text-sm leading-6 text-muted">
                 {project.description}
               </p>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {project.stack.map((tech) => (
                   <li
                     key={tech}
-                    className="rounded-full bg-black/[.05] px-2.5 py-1 text-xs text-zinc-700 dark:bg-white/[.08] dark:text-zinc-300"
+                    className="rounded-full bg-white/[.08] px-2.5 py-1 text-xs text-foreground/80"
                   >
                     {tech}
                   </li>
