@@ -1,5 +1,5 @@
 import { profile } from "@/lib/content";
-import { getSubstackPosts } from "@/lib/substack";
+import { getSubstackFetchedAt, getSubstackPosts } from "@/lib/substack";
 
 function formatDate(date: string) {
   const parsed = new Date(date);
@@ -11,8 +11,9 @@ function formatDate(date: string) {
   });
 }
 
-export default async function Substack() {
-  const posts = await getSubstackPosts();
+export default function Substack() {
+  const posts = getSubstackPosts();
+  const fetchedAt = getSubstackFetchedAt();
 
   return (
     <section className="py-16 sm:py-20">
@@ -27,21 +28,12 @@ export default async function Substack() {
         >
           slippy slide
         </a>
-        .
+        . Last synced {formatDate(fetchedAt)}.
       </p>
 
       {posts.length === 0 ? (
         <p className="mt-8 max-w-xl text-sm leading-6 text-muted">
-          Couldn&apos;t load posts right now — check the{" "}
-          <a
-            href={profile.social.substack}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-accent underline-offset-4 hover:underline"
-          >
-            Substack
-          </a>{" "}
-          directly.
+          No posts to show.
         </p>
       ) : (
         <div className="mt-8 rounded-lg border border-white/10">
