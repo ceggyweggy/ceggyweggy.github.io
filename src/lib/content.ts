@@ -118,6 +118,12 @@ export const education = [
   },
 ];
 
+export const now = {
+  updated: "2026-08-13",
+  text: "I'm currently in San Diego until 19th August, staying at my friend Sarah's house. Sarah has a dog and a cat which are both extremely adorable. Just arrived yesterday from \
+  Berkeley after CS Kickstart ended.",
+};
+
 export const media: { src: string; alt: string; caption?: string }[] = [
   // Add photos here once available, e.g.:
   // { src: "/media/photo1.jpg", alt: "Description", caption: "Optional caption" },
