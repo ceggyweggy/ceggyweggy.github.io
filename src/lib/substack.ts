@@ -31,7 +31,12 @@ export async function getSubstackPosts(): Promise<SubstackPost[]> {
       const res = await fetch(
         `${ARCHIVE_URL}?sort=new&limit=${PAGE_SIZE}&offset=${offset}`
       );
-      if (!res.ok) break;
+      if (!res.ok) {
+        console.error(
+          `[substack] archive fetch failed: ${res.status} ${res.statusText} ${await res.text()}`
+        );
+        break;
+      }
 
       const entries: ArchiveEntry[] = await res.json();
       if (entries.length === 0) break;
@@ -49,7 +54,8 @@ export async function getSubstackPosts(): Promise<SubstackPost[]> {
 
       offset += entries.length;
     }
-  } catch {
+  } catch (err) {
+    console.error("[substack] archive fetch threw:", err);
     return [];
   }
 
