@@ -11,7 +11,7 @@ const links = [
   // { href: "/media", label: "Media" },
   { href: "/substack", label: "Substack" },
   { href: "/now", label: "Now" },
-  { href: "/nowthen", label: "Nowthen"},
+  { href: "/now-then", label: "Now-then"},
   { href: "/dino-cam", label: "Dino Cam" },
   { href: "/contact", label: "Contact" },
 ];
