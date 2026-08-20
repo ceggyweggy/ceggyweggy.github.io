@@ -11,6 +11,7 @@ const links = [
   // { href: "/media", label: "Media" },
   { href: "/substack", label: "Substack" },
   { href: "/now", label: "Now" },
+  { href: "/nowthen", label: "Nowthen"},
   { href: "/dino-cam", label: "Dino Cam" },
   { href: "/contact", label: "Contact" },
 ];
@@ -27,6 +28,7 @@ export default function Header() {
         <nav className="flex gap-6 text-sm text-muted">
           {links.map((link) => {
             const isActive = pathname === link.href;
+            // console.log(isActive);
             return (
               <Link
                 key={link.href}
